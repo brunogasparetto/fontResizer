@@ -1,0 +1,43 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="jquery.fontResizer.js"></script>
+<title>jquery.fontResizer.js by Eder Lima (ederlima.com.br)</title>
+</head>
+
+<body>
+<h2>Change Font Size 1</h2>
+<p><a href="#" title="Maior" id="bigger">Aumentar Texto</a> | <a href="#" title="Menor" id="smaller">Reduzir Texto</a></p>
+<div class="reading">
+  <h1>Lorem ipsum dolor sit amet</h1>
+  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque bibendum, nisi scelerisque porttitor dapibus, sapien turpis fermentum enim, at vehicula tortor ante at diam. Curabitur a nisl a mauris pretium bibendum eget sed nibh. Donec vel ipsum consectetur, mollis tellus in, faucibus velit. Fusce pharetra laoreet enim, in sagittis arcu pellentesque at. Vestibulum pharetra ornare dolor et tristique. Phasellus sed convallis augue. Vivamus augue lorem, congue non pulvinar eget, tempus non ligula. Morbi laoreet neque quis neque rutrum, in consequat lacus gravida. Ut ut tincidunt ipsum. Etiam vel suscipit nisl. </p>
+  <p> Quisque magna sem, blandit et velit quis, fermentum eleifend sem. Curabitur placerat sed tellus ac molestie. Aenean ullamcorper auctor dignissim. Mauris elementum blandit volutpat. Integer posuere ipsum eget varius vehicula. Aliquam ut placerat nunc. Integer vitae dignissim lectus, ut aliquet eros. Etiam et libero porttitor, consequat mauris ut, fermentum arcu. Pellentesque aliquet euismod nibh eu ultrices. Quisque aliquet vehicula ante at hendrerit. Aenean commodo elementum enim. </p>
+</div>
+<h2>Change Font Size 2</h2>
+<p><a href="#" title="Maior" id="bigger2">Aumentar Texto</a> | <a href="#" title="Menor" id="smaller2">Reduzir Texto</a></p>
+<div class="reading2">
+  <h1>Lorem ipsum dolor sit amet</h1>
+  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque bibendum, nisi scelerisque porttitor dapibus, sapien turpis fermentum enim, at vehicula tortor ante at diam. Curabitur a nisl a mauris pretium bibendum eget sed nibh. Donec vel ipsum consectetur, mollis tellus in, faucibus velit. Fusce pharetra laoreet enim, in sagittis arcu pellentesque at. Vestibulum pharetra ornare dolor et tristique. Phasellus sed convallis augue. Vivamus augue lorem, congue non pulvinar eget, tempus non ligula. Morbi laoreet neque quis neque rutrum, in consequat lacus gravida. Ut ut tincidunt ipsum. Etiam vel suscipit nisl. </p>
+  <p> Quisque magna sem, blandit et velit quis, fermentum eleifend sem. Curabitur placerat sed tellus ac molestie. Aenean ullamcorper auctor dignissim. Mauris elementum blandit volutpat. Integer posuere ipsum eget varius vehicula. Aliquam ut placerat nunc. Integer vitae dignissim lectus, ut aliquet eros. Etiam et libero porttitor, consequat mauris ut, fermentum arcu. Pellentesque aliquet euismod nibh eu ultrices. Quisque aliquet vehicula ante at hendrerit. Aenean commodo elementum enim. </p>
+</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+			$('.reading')
+				.fontResizer({
+					smallerbutton : $('#smaller'),
+					biggerbutton : $('#bigger')
+				})
+				.css({'backgroundColor':'#f0f0f0', 'padding':'20px'}); //chainable
+				
+			$('.reading2')
+				.fontResizer({
+					smallerbutton : $('#smaller2'),
+					biggerbutton : $('#bigger2')
+				})
+				.css({'backgroundColor':'#ffcc00', 'padding':'20px'});//chainable
+		});
+</script>
+</body>
+</html>

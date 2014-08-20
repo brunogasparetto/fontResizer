@@ -73,14 +73,6 @@ FontResizer.prototype = {
 		self.trigger("onDecrease", element, event);
 	},
 	
-	getSizeSpecs: function(font_size) {
-		var result = /(-?\d+)(.+)/.exec(font_size);
-		return {
-			number: parseFloat(result[1]),
-			unit: result[2]
-		};
-	},
-	
 	setFontSize: function(getNewValue) {
 		var self = this;
 		
@@ -90,6 +82,14 @@ FontResizer.prototype = {
 			
 			element.css("font-size", getNewValue(specs.number) + specs.unit);
 		});
+	},
+	
+	getSizeSpecs: function(fontSize) {
+		var result = /(-?\d+)(.+)/.exec(fontSize);
+		return {
+			number: parseFloat(result[1]),
+			unit: result[2]
+		};
 	},
 	
 	trigger: function(callback, element, event) {

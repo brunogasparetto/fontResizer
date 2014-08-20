@@ -36,7 +36,7 @@ var pluginName = "fontResizer",
 function FontResizer(element, options) {
 	this.container = $(element);
 	this.settings = $.extend({}, defaults, options);
-	this.init(options);
+	this.init();
 }
 
 FontResizer.prototype = {

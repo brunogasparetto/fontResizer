@@ -1,27 +1,27 @@
-# IntroduÁ„o #
+# Introdu√ß√£o #
 
-jQuery fontResizer È um plugin criado por Eder Lima (ederlima.com.br) e que tomei a liberdade de adaptar para o jQuery Boilerplate.
+jQuery fontResizer √© um plugin criado por Eder Lima (ederlima.com.br) e que tomei a liberdade de adaptar para o jQuery Boilerplate.
 
 ## Como Usar ##
 
-Instanciar o plugin em algum container e indicar dois elementos (seletores v·lidos da jQuery) para serem os botıes que aumentar„o ou diminuir„o o texto.
+Instanciar o plugin em algum container e indicar dois elementos (seletores v√°lidos da jQuery) para serem os bot√µes que aumentar√£o ou diminuir√£o o texto.
 
-As opÁıes disponÌveis s„o: 
+As op√ß√µes dispon√≠veis s√£o: 
 
-* steps - Quantidade de passos que diminuir· e aumentar· a fonte,
-* sizeIncrement - Unidade numÈrica de incremento/decremento da fonte. A unidade de medida (px, pt etc) ser· a mesma j· utilizada na fonte.
-* smallerButton - Seletor do elemento que ser· respons·vel por diminuir a fonte.
-* biggerButton - Seletor do elemento que ser· respons·vel por aumentar a fonte.
-* elements - Array de elementos que poder„o ter o tamanho da fonte alterada.
+* steps - Quantidade de passos que diminuir√° e aumentar√° a fonte,
+* sizeIncrement - Unidade num√©rica de incremento/decremento da fonte. A unidade de medida (px, pt etc) ser√° a mesma j√° utilizada na fonte.
+* smallerButton - Seletor do elemento que ser√° respons√°vel por diminuir a fonte.
+* biggerButton - Seletor do elemento que ser√° respons√°vel por aumentar a fonte.
+* elements - Array de elementos que poder√£o ter o tamanho da fonte alterada.
 * onIncrease - Callback ao aumentar a fonte.
 * onDecrease - Callback ao reduzir a fonte.
 
-As funÁıes de callback rodam no contexto do elemento que disparou a aÁ„o e ainda recebem os seguintes elementos:
+As fun√ß√µes de callback rodam no contexto do elemento que disparou a a√ß√£o e ainda recebem os seguintes elementos:
 
 * Evento disparado.
 * Passo atual
 * Total de passos
-* Botıes como elementos jQuery (smallerButton e biggerButton)
+* Bot√µes como elementos jQuery (smallerButton e biggerButton)
 * O container como elemento jQuery
 
 ## Exemplos ##
